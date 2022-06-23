@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiển thị hình ảnh, và liên kết</title>
+</head>
+<body>
+   <h1>Hiển thị hình ảnh, và liên kết</h1> 
+   <hr>
+   <pre>
+       - Hiển thị hình ảnh trên trang:
+        Sử dụng thẻ img 
+            * thuộc tính: 
+            + src: url (tương đối, tuyệt đối)
+                -> url tuyệt đối: 
+                    [giao thức] -> http, https, ... 
+                    [domain]    -> devmaster.edu.vn 
+                    [path]      -> vị trí file ảnh 
+                ví dụ: 
+                    https://devmaster.edu.vn/images/logo.png 
+                -> url tương đối: trong cùng một website 
+                    tính từ vị trí trang hiện tại: 
+                        +> vào một thư mục: folder/tên file 
+                            VD: images/logo.png 
+                        +> ra ngoài một thư mục: ../ 
+            + alt: không nên để trống / null 
+   </pre>
+   <h2>Đường dẫn tuyệt đối </h2>
+   <p>
+       <img src="https://devmaster.edu.vn/images/logo.png" 
+        alt="Viện Công Nghệ Và Đào Tạo Devmaster">
+   </p>
+   <h2>Đường dẫn tương đối</h2>
+   <p>
+       <img src="images/hoc-code-tha-ga-khong-lo-ve-gia.jpg" 
+            alt="Học code" width="150px">
+        <br>
+        <img src="logo.png" alt="logo">
+   </p>
+</body>
+</html>

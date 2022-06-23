@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form in HTML5</title>
+</head>
+<body>
+    <h1>Form in HTML5</h1>
+    <hr>
+    <pre>
+        form: 
+            attr: id, name, action, method,... 
+        Các loại điều khiển trên form: 
+            input:
+                type: text, password, radio, checkbox, color, 
+                        number, range, date, datetime-local ,
+                        email, tel, search, image, ...
+            select 
+            textarea 
+            button
+    </pre>
+    <hr>
+    <form action="" id="frm" name="frm" >
+        <p>
+            Ô nhập text: 
+            <input type="text" id="txt1" name="txt1"
+                required placeholder="Nhập họ tên...">
+        <p> Ô nhập mật khẩu:
+            <input type="password" id="pas1" name="pas1"
+                placeholder="Nhập mật khẩu..." >
+        <p>
+            Ô chọn 1 khả năng trong nhiều khả năng: <br>
+            <input type="radio" id="rd1" name="opt"
+                value="1" checked> 
+            <label for="rd1">Nam</label>
+            <input type="radio" id="rd2" name="opt"
+                value="0" >
+                <label for="rd2">Nữ</label>
+            <input type="radio" id="rd3" name="opt"
+                value="-1" >
+                <label for="rd3">Khác</label>
+        </p>
+        <p>
+            Ô chọn nhiều khả năng: <br>
+            <input type="checkbox" id="ck1" name="ck"
+                value="bongda" > 
+            <label for="ck1"> Bóng đá</label>
+            <input type="checkbox" id="ck2" name="ck"
+            value="bongro" > 
+        <label for="ck2"> Bóng rổ</label>
+        </p>
+        <p>
+            Ô nhập email:
+            <input type="email" id="email" name="email"
+                placeholder="Nhập email" pattern="" 
+                    maxlength="3">
+        </p>
+        <p>
+            Ô nhập điện thoại: 
+            <input type="tel" placeholder="Dạng điện thoại">
+        </p>
+        <p>
+            Ô chọn mầu:
+            <input type="color" >
+        </p>
+        <p>
+            Ô nhập số:
+            <input type="number" min="0" max="100" value="50">
+        </p>
+        <p>
+            ô chọn trượt:
+            <input type="range"min="0" max="10" value="2">
+        </p>
+        <p>
+            Ô chọn ngày: 
+            <input type="date"><br>
+            <input type="datetime-local" name="" id="">
+        </p>
+        <p>
+            Nút chọn file:
+            <input type="file">
+        </p>
+        <p>
+            Chọn trong danh sách:
+            <select name="sel" id="sel">
+                <option value="HN">Hà nội</option>
+                <option value="HCM">Tp. HCM</option>
+                <option value="DN">Đà nẵng</option>
+                <option value="HP">Hải phòng</option>
+            </select>
+        </p>
+        <p>
+            Nhập nhiều dòng:
+            <textarea name="" id="" rows="3" style="width: 100%;"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Registry">
+            <input type="reset" value="Reset">
+            <button>Click</button>
+        </p>
+    </form>
+</body>
+</html>
